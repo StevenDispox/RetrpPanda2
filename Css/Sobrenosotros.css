@@ -1,7 +1,7 @@
 #cosablanca {
     border: 1px solid #E2E2E2;
     border-radius: 1.25rem;
-    background-color: #ff8552;
+    background-color: #858ad3;
   }
   #carouselExampleFade {
     width: 100%;
@@ -66,7 +66,7 @@
     padding-bottom: 5%;
     border: 1px #000000;
     border-radius: 1.25rem;
-    background-color: #ffca90;
+    background-color: #a9acfe;
   }
   a {
     text-decoration: none; /* Quita el subrayado */
@@ -79,7 +79,7 @@
     background-image: linear-gradient(to right, #ff8552 , #ffca90);
   }
   .hr1{
-    color: #e6f14a;
+    color: #4ae0f1;
     background-color: #e6f14a; 
     border: 0 none; 
     color: #e6f14a; 
@@ -105,7 +105,7 @@
   .mision, .vision {
     flex: 1;
     padding: 20px;
-    background-color: #FFD700; /* Color dorado */
+    background-color: #7e7cd3; /* Color dorado */
     border-radius: 10px;
   }
   .footer {

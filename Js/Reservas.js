@@ -1,6 +1,6 @@
 
-var platos = ['Lunes: Sopa de Pollo', 'Martes: Nachos preparados', 'Miércoles: Pizza gigante', 'Jueves: Tacos la cazuela', 'Viernes: Tortas al pastor', 'Sábado: Parrillada familiar', 'Domingo: Sopa de frijoles'];
-var imagenes = ['../Img/1.png', '../Img/2.png', '../Img/3.png', '../Img/4.png', '../Img/5.png', '../Img/6.png', '../Img/7.png'];
+var platos = ['Lunes: Sopa de Pollo', 'Martes: Nachos preparados', 'Bapesta: Black Shark Edition', 'Jueves: Tacos la cazuela', 'Viernes: Tortas al pastor', 'Sábado: Parrillada familiar', 'Domingo: Sopa de frijoles'];
+var imagenes = ['../Img/1.png', '../Img/2.png', '../Img/BapestaShark.jpeg', '../Img/4.png', '../Img/5.png', '../Img/6.png', '../Img/7.png'];
 var currentIndex;
 
 function cambiarTexto() {
