@@ -43,13 +43,13 @@ a {
       margin: 0;
   }
   .btn-custom {
-      background-color: #FFA500; 
-      border-color: #FFA500; 
+      background-color: #817ad1; 
+      border-color: #000000; 
       color: #fff; 
   }
   .btn-custom:hover {
-      background-color: #FF8C00; 
-      border-color: #FF8C00; 
+      background-color: #8a77d8; 
+      border-color: #8882d5; 
   }
   .eliminar-comentario {
       position: absolute;

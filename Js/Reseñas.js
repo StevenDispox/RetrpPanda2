@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="comentario">
         <div class="row">
             <div class="col-2">
-                <img src="../Img/logo.jpg" alt="Imagen de perfil">
+                <img src="../Img/RetroPandalog.jpg" alt="Imagen de perfil">
             </div>
             <div class="col">
                 <div class="nombre">${nombre}</div>
