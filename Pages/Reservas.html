@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Reservas</title>
+    <link rel="icon" type="image/x-icon" href="../Img/logo.jpg">
+    <link rel="stylesheet" href="../Css/barra.css">
+    <link rel="stylesheet" href="../Css/Reservas.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <div class="usuario">
+                    <img src="../Img/logo.jpg" alt="">
+                    <span>La Cazuela</span>
+                </div>
+            </div>
+            <a href="../Inicio.html#platito">
+                <button class="boton">
+                    <ion-icon name="disc-outline"></ion-icon>
+                    <span>Plato del día</span>
+                </button>
+            </a>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="../Inicio.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Menu.html">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+                        <span>Menú</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="inbox" href="Reservas.html">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                        <span>Reservas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="SobreNosotros.html">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                        <span>Sobre Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Reseñas.html">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <span>Reseñas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="linea"></div>
+        <br>
+        <div class="usuario">
+            <div class="dropup">
+                <ion-icon class="dropbtn" name="ellipsis-vertical-outline"></ion-icon>
+                <div class="dropup-content">
+                    <a href="Login.html">Cerrar sesión</a>
+                </div>
+            </div>
+        <div class="usuario">
+            <img src="../Img/logo.jpg" alt="">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Fer Huezo</span>
+                    <span class="email">20230501@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <main>
+        <section class="banner">
+            <h2>RESERVA TU PLATILLO</h2>
+            <div class="container-img">
+                <img id="imgs">
+            </div>
+                    
+            <div class="card-contenido">
+                <h3 id="platos">...</h3>
+                <form id="reservar-plato">
+                    <div class="form-row">
+                        <input  class="form-control" type="text" placeholder="Nombre para retirar" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-row">
+                    <select class="form-control" id="metodo_pago" name="metodo_pago" onchange="mostrarIconoPago()" required>
+                        <option value="">Seleccionar método de pago</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    </select>
+                    <div class="input-group-append">
+                        <img id="paymentIcon" src="../Img/fondo_png_vacio_by_juuliidev_d4x2xn5-fullview.png" alt="">
+                    </div>
+                </div>
+                    <div class="form-row">
+                        <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="Teléfono" required>
+
+                        <select class="form-control" name="horario" id="horario" required>
+                            <option value="">Seleccionar hora</option>
+                            <option value="06">06:00</option>
+                            <option value="08">08:00</option>
+                            <option value="10">10:00</option>
+                            <option value="12">12:00</option>
+                            <option value="14">2:00</option>
+                            <option value="16">4:00</option>
+                            <option value="18">6:00</option>
+                            <option value="20">8:00</option>
+                        </select>              
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" id="enviarReserva" class="form-control" value="RESERVAR PLATO" onclick="agregarUsuario()">
+                    </div>
+
+                </form>
+            </div>
+            <br>
+                    <h3>Listado de reservas</h3>
+                    <ul id="listaUsuarios" ></ul>           
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.min.js"></script>
+    <script src="../Js/Reservas.js"></script>
+</body>
+
+</html>
