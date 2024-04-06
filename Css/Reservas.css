@@ -27,7 +27,7 @@ body {
     padding-bottom:20px;
 }
 main{
-    background: rgb(255, 202, 144) center/cover no-repeat;
+    background: rgb(151, 144, 255) center/cover no-repeat;
 }
 
 .card-contenedor {
@@ -85,7 +85,7 @@ color: #5f5e5e;
 
 form input[type = submit] {
     color: #fff;
-    background:#FFA500;
+    background:#8e66f2;
     border-radius: 200px;
     cursor:pointer;
 }
@@ -142,7 +142,7 @@ form input[type = submit]:hover{
     .container-img{
         padding-left: 50px;
         padding-right: 50px;
-        background: radial-gradient(rgba(255, 202, 144, 1) 50%, rgba(255, 133, 82, 1)100%) center/cover no-repeat;
+        background: radial-gradient(rgb(144, 255, 237) 50%, rgb(151, 82, 255)100%) center/cover no-repeat;
     }
     #paymentIcon {
         width: 100%;

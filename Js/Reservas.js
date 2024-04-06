@@ -1,6 +1,6 @@
 
-var platos = ['Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Viernes: Tortas al pastor', 'Sábado: Parrillada familiar', 'Domingo: Sopa de frijoles'];
-var imagenes = ['../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/5.png', '../Img/6.png', '../Img/7.png'];
+var platos = ['Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Bapesta: Black Shark Edition', 'Viernes: Tortas al pastor', 'Sábado: Parrillada familiar', 'Bapesta: Black Shark Edition'];
+var imagenes = ['../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/BapestaShark.jpeg', '../Img/5.png', '../Img/6.png', '../Img/BapestaShark.jpeg'];
 var currentIndex;
 
 function cambiarTexto() {
